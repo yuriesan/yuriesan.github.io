@@ -1,0 +1,286 @@
+@import "./mixin.scss";
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.box{
+  @include box(#FFD700);
+
+  .content1-box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content1 {
+      height: 55vh;
+      width: 100%;
+      background-color:white;
+      text-align: center;
+      
+      .title{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        color: #333333;
+        font-family: 'Courier New',sans-serif;
+        padding-top: 30px;
+      }
+
+      .niko-chan{
+        height: 60px;
+        width: 90px;
+      }
+
+      .menu{
+        list-style: none;
+        
+        .sub-title{
+          font-size: 20px;
+          display: inline-block;
+          
+          margin-top: 55px;
+          font-family: 'Courier New',sans-serif;
+          
+          .link{
+            text-decoration: none;
+            border-left: solid 1px lightgray;
+            color: #333333;
+            padding: 0 15px 0 18px;
+          }
+        }
+        .sub-title:last-child{
+          border-right: solid 1px lightgray;
+        }
+      }
+    }
+  }
+  
+  .big-content{
+    display: flex;
+    width: 100%;
+
+    .left-content{
+      height: 100vh;
+      width: 55%;
+      text-align: center;
+
+      .profile{
+        font-size: 45px;
+        font-weight: bold;
+        font-family: 'Courier New',sans-serif;
+        margin-left: 15px;
+      }
+
+      .photo{
+        width: 570px;
+        height: 430px;
+        border-radius: 15px;
+        margin-top: 40px;
+        box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+      }
+    }
+    
+    .right-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+
+      .right-content{
+        background-color: white;
+        font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+        width: 80%;
+        border-radius: 20px;
+        margin: 15px 0;
+        position: relative;
+        box-shadow: 4px 4px 4px #333333;
+        padding: 15px;
+        color: #333333;
+
+        .introduction{
+          display: inline-block;
+          font-weight: bold;
+          border-bottom: 2px dashed #eb6101;
+          margin-right: 20px;
+        }
+        
+        .answer{
+          display: inline-block;
+        }
+      }
+
+      .right-content:before {  
+        content: "";
+        position: absolute;
+        left: -38px;
+        width: 13px;
+        height: 12px;
+        bottom: 0;
+        background: white;
+        border-radius: 50%;
+      }
+      
+      .right-content:after {
+        content: "";
+        position: absolute;
+        left: -24px;
+        width: 20px;
+        height: 18px;
+        bottom: 3px;
+        background: white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+
+  .title-box{
+    width: 100%;
+    background-color:white;
+    margin: 10px 0;
+    box-shadow: 0px 0px 0px 10px white;
+    border: dashed 2px lightgray;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    .collection{
+      font-size: 45px;
+      margin: 10px;
+      padding:10px;
+      color: #333333;
+      background-color:white;
+      font-weight: bold;
+      font-family: 'Courier New',sans-serif;
+    }
+
+    .fab{
+      font-size: 45px;
+      padding: 15px;
+    }
+  }
+
+  .collection-wrap{
+    display: flex;
+    justify-content: space-around;
+
+    .collection-box{
+      width: 100%;
+      margin-top : 30px;
+
+      .image-box{
+        position: relative;
+        margin: 6%;
+        text-align: center;
+        
+
+
+        .text{
+          position: absolute;
+          text-align: center;
+          width: 100%;
+          bottom: 15px;
+          font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+          color: #333333;
+        }
+
+        .collection-img{
+          height: 300px;
+          width: 350px;
+          border-radius: 15px;
+          border: 10px solid #fff;
+          border-bottom: 90px solid #fff;
+          box-shadow: 3px 3px 3px #777;
+        }
+      }
+    }
+  }
+  
+  .gallerywrap{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+    .gallery{
+      font-family: 'Courier New',sans-serif;
+      font-weight: bold;
+      color: #333333;
+      font-size: 50px;
+      margin: 10px;
+      height: 20vh;
+      line-height: 150px;
+    }
+
+    .gallerybox{
+      height: 90vh;
+      width: 100%;
+      background-color:white;
+
+      .image-text{
+        padding: 10px;
+        font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+      }
+    }
+  }
+}
+
+.footer{
+  height: 60px;
+  width: 100%;
+  background-color: rgb(255, 215, 1);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 60px;
+
+  .niko-chan{
+    width: 50px;
+    height:40px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .footer-name{
+    margin: 0;
+  }
+}
+
+
+
+:root {
+  --numOfListA: 9;
+  --imgW: 350px;
+  --imgH: var(--imgW);
+  --mBetweenImg: 50px;
+}
+@media screen and (min-width: 900px) {:root {--imgW: 350px;}}
+.slider-container {
+  font-size: 0;
+  white-space: nowrap;
+  animation: slideshow 30s linear infinite;
+}
+.slider-img {
+  width: var(--imgW);
+  height:  var(--imgH);
+}
+.slider-img + .slider-img {margin-left: var(--mBetweenImg);}
+@keyframes slideshow {100% {transform: translateX(calc((var(--numOfListA) * var(--imgW) + var(--mBetweenImg) * var(--numOfListA)) * -1));}}
+
+
+
+.container {
+  margin-top: 100px;
+  overflow: hidden;
+  box-sizing: border-box;
+}

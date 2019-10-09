@@ -94,7 +94,6 @@ body {
 }
 
 .box .big-content .left-content .photo {
-  width: 80%;
   border-radius: 30%;
   margin-top: 40px;
   -webkit-box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
@@ -236,6 +235,7 @@ body {
   color: #333333;
   font-size: 50px;
   height: 20vh;
+  padding-top: 50px;
 }
 
 .box .gallerywrap .gallerybox {
@@ -335,6 +335,7 @@ body {
   }
   .photo {
     margin-top: 10px;
+    width: 50%;
   }
   .left-content {
     width: 100%;
@@ -411,6 +412,7 @@ body {
   }
   .photo {
     font-size: 2.5rem;
+    width: 50%;
   }
   .introduction {
     font-size: 0.4rem;
@@ -478,6 +480,7 @@ body {
   }
   .photo {
     font-size: 3rem;
+    width: 80%;
   }
   .left-content {
     width: 55%;

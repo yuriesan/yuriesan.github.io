@@ -73,7 +73,7 @@ body{
       }
 
       .photo{
-        width: 80%;
+        // width: 80%;
         border-radius: 30%;
         margin-top: 40px;
         box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
@@ -206,6 +206,7 @@ body{
       color: #333333;
       font-size: 50px;
       height: 20vh;
+      padding-top:50px;
     }
 
     .gallerybox{
@@ -291,6 +292,7 @@ body{
 
   .photo{
     margin-top: 10px;
+    width: 50%;
   }
 
   .left-content{
@@ -353,11 +355,8 @@ body{
     font-size: 0.7rem;
     padding: 10px;
   }
-
-
-
-
 }
+
 
 @media screen and (min-width:700px)and (max-width:999px){
   .sub-title{
@@ -371,10 +370,12 @@ body{
 
   .profile{
     font-size: 2.5rem;
+
   }
 
   .photo{
     font-size: 2.5rem;
+    width: 50%;
   }
 
   .introduction{
@@ -446,6 +447,7 @@ body{
 
   .photo{
     font-size: 3rem;
+    width: 80%;
   }
 
   .left-content{

@@ -206,7 +206,6 @@ body{
       color: #333333;
       font-size: 50px;
       height: 20vh;
-      line-height: 270px;
     }
 
     .gallerybox{
@@ -222,26 +221,23 @@ body{
 }
 
 
-// .footer{
-//   height: 60px;
-//   width: 100%;
-//   background-color: rgb(255, 215, 1);
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
-//   line-height: 60px;
+.footer{
+  background-color: rgb(255, 215, 1);
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
 
-//   .niko-chan{
-//     width: 50px;
-//     height:40px;
-//     text-align: center;
-//     vertical-align: middle;
-//   }
+  .niko-chan{
+    width: 50px;
+    height:40px;
+    text-align: center;
+    vertical-align: middle;
+  }
   
-//   .footer-name{
-//     margin: 0;
-//   }
-// }
+  .footer-name{
+    margin: 0;
+  }
+}
 
 
 
